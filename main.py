@@ -35,6 +35,6 @@ def handle_message(message):
     bot.reply_to(message, reply)
 
 # Запуск
-if name __==__ "__main__":
+if __name__ == "__main__":
     print("DALDOBROBot запущен через OpenRouter")
     bot.polling(non_stop=True)
