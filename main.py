@@ -31,6 +31,6 @@ def handle_message(message):
     bot.reply_to(message, reply)
 
 # Запуск бота
-if name == "__main__":
+if __name__ == "__main__":
     print("DALDOBROBot запущен")
     bot.polling(non_stop=True)
