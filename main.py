@@ -25,8 +25,9 @@ def handle_message(message):
 
     try:
         response = client.chat.completions.create(
-    model="anthropic/claude-3-haiku"
-            messages=[{"role": "user", "content": user_text}]
+    model="anthropic/claude-3-haiku",
+    messages=[{"role": "user", "content": user_text}]
+)
         )
         reply = response.choices[0].message.content.strip()
     except Exception as e:
